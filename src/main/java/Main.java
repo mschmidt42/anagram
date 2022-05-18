@@ -1,12 +1,18 @@
 
 class Main {
-  public String getMessage(){
-    return "Hello World.";
+
+  public boolean isAnagram(String word1, String word2) {
+	  return false;
   }
 
   public static void main(String[] args) {
     Main app = new Main();
-    System.out.println(app.getMessage());
+
+    if( app.isAnagram("tap", "pat") ) {
+    	System.out.println("anagram");
+    } else {
+    	System.out.println("no anagram");
+    }
   }
 
 }
