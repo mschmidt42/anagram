@@ -54,12 +54,21 @@ tasks.eclipse.dependsOn << {
     }
 }
 
-task toReplit(type:Copy) {
-	from("src/main/java"){
-		include "**/*.java"
-	}
-	from("src/test/java"){
-		include "**/*.java"
-	}
-	into "build/replit"
+test {
+    testLogging {
+        exceptionFormat = 'full'
+        events 'FAILED', 'SKIPPED', 'PASSED'
+        showStandardStreams = true
+        afterSuite { desc, result ->
+            if (!desc.parent) {
+                println "\nTest result: ${result.resultType}"
+                println "Test summary: ${result.testCount} tests, " +
+                        "${result.successfulTestCount} succeeded, " +
+                        "${result.failedTestCount} failed, " +
+                        "${result.skippedTestCount} skipped"
+            }
+        }
+    }
+
+    useJUnitPlatform {}
 }

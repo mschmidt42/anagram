@@ -10,8 +10,10 @@ Length of word1 and word2 is between 111 and 50,00050,00050,000.
 
 Input
 
-  word1 = "tap"
-  word2 = "pat"
+```
+word1 = "tap"
+word2 = "pat"
+```
 
 Explanation
 
@@ -24,23 +26,26 @@ True
 
 Input
 
-  word1 = "Aal"
-  word2 = "All"
-
+```
+word1 = "Aal"
+word2 = "All"
+```
 Output
 
 False
 
 Explanation
 
-"All" can’t be rearranged to form "Aal", since it doesn’t have two letters 'a'.
+"All" can't be rearranged to form "Aal", since it doesn't have two letters 'a'.
 
 ## Example 3
 
 Input
 
-  word1 = "IAmLordVoldemort"
-  word2 = "TomMarvoloRiddle"
+```
+word1 = "IAmLordVoldemort"
+word2 = "TomMarvoloRiddle"
+```
 
 Output
 
@@ -48,4 +53,4 @@ True
 
 Explanation
 
-Since we don’t distinguish big and small letters "TomMarvoloRiddle" can be rearranged to form "IAmLordVoldemort".
+Since we don't distinguish big and small letters "TomMarvoloRiddle" can be rearranged to form "IAmLordVoldemort".
