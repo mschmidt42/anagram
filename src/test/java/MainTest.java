@@ -48,5 +48,15 @@ class AppTest {
         assertTrue(classUnderTest.isAnagram("Behoerdenbauten", "ohrenbetaeubend"), "isAnagram(\"Behoerdenbauten\", \"ohrenbetaeubend\") should be true" );
     }
 
+    @DisplayName("isAnagram(\"William Shakespeare\", \"I’ll make a wise phrase\") => true")
+    @Test void testIsAnagram_Shakespeare2() {
+        Main classUnderTest = new Main();
+        assertTrue(classUnderTest.isAnagram("William Shakespeare", "I’ll make a wise phrase"), "isAnagram(\"William Shakespeare\", \"I’ll make a wise phrase\") should be true" );
+    }
 
+    @DisplayName("isAnagram(\"William Shakespeare\", \"I'll make a wise phrase\") => true")
+    @Test void testIsAnagram_Shakespeare() {
+        Main classUnderTest = new Main();
+        assertTrue(classUnderTest.isAnagram("William Shakespeare", "I'll make a wise phrase"), "isAnagram(\"William Shakespeare\", \"I'll make a wise phrase\") should be true" );
+    }
 }
