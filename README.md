@@ -4,7 +4,7 @@ Given two words consisting of english letters (uppercase and lowercase) determin
 
 Please write a function anagrams(word1, word2) that returns True if word2 is an anagram of word1, or False otherwise.
 
-Length of word1 and word2 is between 111 and 50,00050,00050,000.
+Length of word1 and word2 is between 111 and 50,000.
 
 ## Example 1
 
