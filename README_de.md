@@ -13,40 +13,43 @@ Die Länge von Wort1 und Wort2 liegt zwischen 1 und 500
 
 Eingabe
 
+```
 Wort1 = "tap"
 Wort2 = "pat"
+```
+
+Ausgabe: ** True**
 
 Erläuterung
 
 Vertausche den ersten und letzten Buchstaben von pat, um tap zu erhalten. Ausgabe
 
-Wahr
 
 ## Beispiel 2
 
 Eingabe
 
+```
 Wort1 = "Aal"
-Wort2 = "Alle"
+Wort2 = "All"
+```
 
-Ausgabe
-
-Falsch
+Ausgabe: **False**
 
 Erläuterung
 
-"All" kann nicht zu "Aal" umgeordnet werden, da es keine zwei Buchstaben 'a' enthält.
+"All" kann nicht zu "Aal" umgeformt werden, da es keine zwei Buchstaben 'a' enthält.
 
 ## Beispiel 3
 
 Eingabe
 
+```
 wort1 = "IAmLordVoldemort"
 Wort2 = "TomMarvoloRiddle"
+```
 
-Ausgabe
-
-Wahr
+Ausgabe: **True**
 
 Erläuterung
 
